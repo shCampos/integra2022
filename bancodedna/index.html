@@ -69,7 +69,43 @@
         <h2>Quantificação - valores</h2>
         <a href="#indice">Voltar ao índice</a>
 
+        <p><b>ATENÇÃO:</b> idade em anos e rendimento em mg/uL</p>
+        <p><b>LEGENDA:</b> D&D - Doyle e Doyle (1987) · TZ - Tel-Zur <i>et al.</i> (1999) · SA - Sarrazola e Alzate (2019)</p>
 
+        <h3>BROMELIACEAE</h3>
+        <table id="bromeliaceaeTable">
+            <thead>
+                <tr class="header">
+                    <th>Tombo</th>
+                    <th>Espécie</th>
+                    <th>Idade</th>
+                    <th>D&D</th>
+                    <th>TZ</th>
+                    <th>SA</th>
+                </tr>
+            </thead>
+            
+            <tbody id="bromeliaceaeTableBody">
+            </tbody>
+        </table>
+
+        <h3>CACTACEAE</h3>
+        <table id="cactaceaeTable">
+            <thead>
+                <tr class="header">
+                    <th>Tombo</th>
+                    <th>Espécie</th>
+                    <th>Órgão</th>
+                    <th>Idade</th>
+                    <th>D&D</th>
+                    <th>TZ</th>
+                    <th>SA</th>
+                </tr>
+            </thead>
+            
+            <tbody id="cactaceaeTableBody">
+            </tbody>
+        </table>
     </section>
 
     <section>
@@ -88,19 +124,467 @@
         <h2>QR Codes</h2>
         <a href="#indice">Voltar ao índice</a>
 
-        <h3 class="qrcodeTitle">Literatura no Mendeley</h3>
-        <div class="qrcode" id="qrcodeMendeley"></div>
+        <h3 class="qrcodeTitle">Christenhusz & Byng (2016)</h3>
+        <div class="qrcode" id="qrcodeChristenhuszByng2016"></div>
     </section>
 
     <script type="text/javascript">
-        new QRCode(document.getElementById("qrcodeMendeley"), {
+        new QRCode(document.getElementById("qrcodeChristenhuszByng2016"), {
             text: "http://www.google.com",
             width: 164,
             height: 164,
-            colorDark : "#000000",
-            colorLight : "#ffffff",
+            colorDark : "#000",
+            colorLight : "#fff",
             correctLevel : QRCode.CorrectLevel.H
         })
+    </script>
+
+    <script>
+        const bromeliaceaeData = [
+            {
+                "tombo": 8791,
+                "nome": "Billbergia porteana Brongn. ex Beer",
+                "idade": 21,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 12020,
+                "nome": "Billbergia porteana Brongn. ex Beer",
+                "idade": 17,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 3017,
+                "nome": "Bromelia balansae Mez",
+                "idade": 30,
+                "doyleedoyle": 33.3,
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 3968,
+                "nome": "Bromelia balansae Mez",
+                "idade": 29,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 5434,
+                "nome": "Bromelia balansae Mez",
+                "idade": 26,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 10085,
+                "nome": "Bromelia balansae Mez",
+                "idade": 18,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 15773,
+                "nome": "Bromelia hieronymi Mez",
+                "idade": 8,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 15007,
+                "nome": "Deuterocohnia meziana Kuntze ex Mez",
+                "idade": 17,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 10917,
+                "nome": "Dyckia aff. gracilis Mez",
+                "idade": 24,
+                "doyleedoyle": 66.6,
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 15388,
+                "nome": "Dyckia excelsa Leme",
+                "idade": 10,
+                "doyleedoyle": 33.3,
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 17524,
+                "nome": "Dyckia excelsa Leme",
+                "idade": 3,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 17384,
+                "nome": "Dyckia leptostachya Baker",
+                "idade": 15,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": 66.6,
+                "": ""
+            },
+            {
+                "tombo": 10761,
+                "nome": "Dyckia sp.",
+                "idade": 20,
+                "doyleedoyle": "",
+                "telzur": 66.6,
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 77,
+                "nome": "Encholirium lymanianum E. Pereira & Martinelli",
+                "idade": 40,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 17027,
+                "nome": "Fosterella sp.",
+                "idade": 23,
+                "doyleedoyle": 33.3,
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 14026,
+                "nome": "Pseudananas sagenarius (Arruda) Camargo",
+                "idade": 26,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 6867,
+                "nome": "Tillandsia loliacea Mart. ex Schult. f.",
+                "idade": 24,
+                "doyleedoyle": 33.3,
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 6802,
+                "nome": "Tillandsia sp.",
+                "idade": 23,
+                "doyleedoyle": 33.3,
+                "telzur": 66.6,
+                "sarrazolaalzate": 66.6,
+                "": ""
+            },
+            {
+                "tombo": 14027,
+                "nome": "Tillandsia streptocarpa Baker",
+                "idade": 27,
+                "doyleedoyle": 33.3,
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 4728,
+                "nome": "Tillandsia streptocarpa Baker",
+                "idade": 26,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            },
+            {
+                "tombo": 4679,
+                "nome": "Tillandsia streptocarpa Baker",
+                "idade": 25,
+                "doyleedoyle": 66.6,
+                "telzur": "",
+                "sarrazolaalzate": "",
+                "": ""
+            }
+        ]
+
+        const bromeliaceaeTableData = bromeliaceaeData.map(value => {
+            const nomeArray = value.nome.split(" ")
+            return (
+                `<tr>
+                    <td>${value.tombo}</td>
+                    <td><i>${nomeArray[0]+" "+nomeArray[1]}</i></td>
+                    <td>${value.idade}</td>
+                    <td>${value.doyleedoyle}</td>
+                    <td>${value.telzur}</td>
+                    <td>${value.sarrazolaalzate}</td>
+                </tr>`
+            );
+        }).join('')
+
+        document.querySelector("#bromeliaceaeTableBody").innerHTML = bromeliaceaeTableData
+    </script>
+
+    <script>
+        const cactaceaeData = [
+            {
+                "tombo": 8786,
+                "nome": "Brasiliopuntia brasiliensis (Willd.) A.Berger",
+                "orgao": "Folha",
+                "Idade": 21,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 9353,
+                "nome": "Brasiliopuntia brasiliensis (Willd.) A.Berger",
+                "orgao": "Folha",
+                "Idade": 21,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 11994,
+                "nome": "Brasiliopuntia brasiliensis (Willd.) A.Berger",
+                "orgao": "Folha",
+                "Idade": 17,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 15342,
+                "nome": "Cereus bicolor Rizzini & Mattos",
+                "orgao": "Flor",
+                "Idade": 14,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 3620,
+                "nome": "Cereus hildmannianus K. Schum.",
+                "orgao": "Caule",
+                "Idade": 29,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": 33.3
+            },
+            {
+                "tombo": 3250,
+                "nome": "Cereus peruvianus (L.) Mill.",
+                "orgao": "Caule",
+                "Idade": 29,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 10169,
+                "nome": "Cereus saddianus (Rizzini & A. Mattos) P.J. Braun",
+                "orgao": "Caule",
+                "Idade": 18,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 7687,
+                "nome": "Discocactus ferricola Buining & Brederoo",
+                "orgao": "Raiz",
+                "Idade": 27,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 7685,
+                "nome": "Echinopsis hammerschmidii C�rdenas",
+                "orgao": "Raiz",
+                "Idade": 27,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 13631,
+                "nome": "Epiphyllum phyllanthus (L.) Haw.",
+                "orgao": "Caule",
+                "Idade": 23,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 5911,
+                "nome": "Epiphyllum phyllanthus (L.) Haw.",
+                "orgao": "Caule",
+                "Idade": 21,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 5912,
+                "nome": "Harrisia balansae (K. Schum.) N.P. Taylor & Zappi",
+                "orgao": "Flor",
+                "Idade": 22,
+                "doyleedoyle": 33.3,
+                "telzur": "",
+                "sarrazolaalzate": 33.3
+            },
+            {
+                "tombo": 5912,
+                "nome": "Harrisia balansae (K. Schum.) N.P. Taylor & Zappi",
+                "orgao": "Caule",
+                "Idade": 22,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": 33.3
+            },
+            {
+                "tombo": 5051,
+                "nome": "Pereski sacharosa Griseb.",
+                "orgao": "Folha",
+                "Idade": 25,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": 33.3
+            },
+            {
+                "tombo": 5097,
+                "nome": "Pereskia sacharosa Griseb.",
+                "orgao": "Folha",
+                "Idade": 25,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 9071,
+                "nome": "Pereskia sacharosa Griseb.",
+                "orgao": "Folha",
+                "Idade": 20,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": 33.3
+            },
+            {
+                "tombo": 5406,
+                "nome": "Praecereus euchlorus (F.A.C. Weber ex K. Schum.) N.P. Taylor",
+                "orgao": "Caule",
+                "Idade": 25,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": 33.3
+            },
+            {
+                "tombo": 13501,
+                "nome": "Praecereus euchlorus (F.A.C. Weber ex K. Schum.) N.P. Taylor",
+                "orgao": "Caule",
+                "Idade": 24,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 5915,
+                "nome": "Praecereus euchlorus (F.A.C. Weber ex K. Schum.) N.P. Taylor",
+                "orgao": "Caule",
+                "Idade": 21,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 5914,
+                "nome": "Praecereus euchlorus (F.A.C. Weber ex K. Schum.) N.P. Taylor",
+                "orgao": "Caule",
+                "Idade": 20,
+                "doyleedoyle": "",
+                "telzur": 33.3,
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 13835,
+                "nome": "Rhipsalis baccifera",
+                "orgao": "Caule",
+                "Idade": 19,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 7398,
+                "nome": "Rhipsalis cereuscula Haw.",
+                "orgao": "Raiz",
+                "Idade": 36,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 7398,
+                "nome": "Rhipsalis cereuscula Haw.",
+                "orgao": "Caule",
+                "Idade": 36,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            },
+            {
+                "tombo": 5916,
+                "nome": "Rhipsalis shaferi Britton & Rose",
+                "orgao": "Caule",
+                "Idade": 21,
+                "doyleedoyle": "",
+                "telzur": "",
+                "sarrazolaalzate": ""
+            }
+        ]
+
+        const cactaceaeTableData = cactaceaeData.map(value => {
+            const nomeArray = value.nome.split(" ")
+            return (
+                `<tr>
+                    <td>${value.tombo}</td>
+                    <td><i>${nomeArray[0]+" "+nomeArray[1]}</i></td>
+                    <td>${value.orgao}</td>
+                    <td>${value.Idade}</td>
+                    <td>${value.doyleedoyle}</td>
+                    <td>${value.telzur}</td>
+                    <td>${value.sarrazolaalzate}</td>
+                </tr>`
+            );
+        }).join('')
+
+        document.querySelector("#cactaceaeTableBody").innerHTML = cactaceaeTableData
     </script>
 </body>
 </html>
