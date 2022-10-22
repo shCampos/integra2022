@@ -7,6 +7,7 @@
     <title>Integra UFMS 2022</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 </head>
 <body>
     <h1>Integra UFMS 2022</h1>
@@ -14,9 +15,30 @@
     <a href="bancodedna/index.html">
         <h2>Construção de banco de DNA genômico de Bromeliaceae e Cactaceae de Mato Grosso do Sul</h2>
     </a>
+    <div class="qrcode" id="qrcodeBanco"></div>
 
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcodeBanco"), {
+            text: "https://shcampos.github.io/integra2022/bancodedna/",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+    </script>
+
+    <div style="height: 50px"></div>
     <a href="handroanthus/index.html">
         <h2>Handroanthus: uma proposta de Role-Playing Game para o ensino de biologia contextualizado no Pantanal</h2>
     </a>
+    <div class="qrcode" id="qrcodeHandroanthus"></div>
+    
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcodeHandroanthus"), {
+            text: "https://shcampos.github.io/integra2022/handroanthus/",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+    </script>
 </body>
 </html>
