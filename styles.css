@@ -44,6 +44,9 @@ table {
     color: white;
     font-weight: bold;
 }
+.qrcodeGroup{
+    margin: 10px 0px 15px 0px;
+}
 .qrcode img{
     display: block;
     margin-left: auto;
@@ -51,4 +54,5 @@ table {
 }
 .qrcodeTitle {
     text-align: center;
+    margin-bottom: 2px;
 }

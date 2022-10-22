@@ -122,15 +122,34 @@
         <h2>QR Codes</h2>
         <a href="#indice">Voltar ao índice</a>
 
-        <h3 class="qrcodeTitle">
-            <a target="_blank" href="http://dx.doi.org/10.11646/phytotaxa.261.3.1">Christenhusz & Byng (2016)</a>
-        </h3>
-        <div class="qrcode" id="qrcodeChristenhuszByng2016"></div>
+        <div class="qrcodeGroup">
+            <h3 class="qrcodeTitle">
+                <a target="_blank" href="http://dx.doi.org/10.11646/phytotaxa.261.3.1">
+                    Christenhusz & Byng (2016)
+                </a>
+            </h3>
+            <div class="qrcode" id="qrcodeNewboldetal2015"></div>
+        </div>
+
+        <div class="qrcodeGroup">
+            <h3 class="qrcodeTitle">
+                <a target="_blank" href="http://dx.doi.org/10.1038/nature14324">
+                    Newbold <i>et al.</i> (2015)
+                </a>
+            </h3>
+            <div class="qrcode" id="qrcodeChristenhuszByng2016"></div>
+        </div>
     </section>
 
     <script type="text/javascript">
         new QRCode(document.getElementById("qrcodeChristenhuszByng2016"), {
             text: "http://dx.doi.org/10.11646/phytotaxa.261.3.1",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+        new QRCode(document.getElementById("qrcodeNewboldetal2015"), {
+            text: "http://dx.doi.org/10.1038/nature14324",
             colorDark : "#242424",
             colorLight : "#fff",
             correctLevel : QRCode.CorrectLevel.H
