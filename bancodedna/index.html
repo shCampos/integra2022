@@ -7,6 +7,7 @@
     <title>Integra UFMS 2022</title>
 
     <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 </head>
 <body>
     <a href="../index.html">Página inicial</a>
@@ -86,6 +87,20 @@
         <a name="qrcodes"></a>
         <h2>QR Codes</h2>
         <a href="#indice">Voltar ao índice</a>
+
+        <h3 class="qrcodeTitle">Literatura no Mendeley</h3>
+        <div class="qrcode" id="qrcodeMendeley"></div>
     </section>
+
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcodeMendeley"), {
+            text: "http://www.google.com",
+            width: 164,
+            height: 164,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+    </script>
 </body>
 </html>
