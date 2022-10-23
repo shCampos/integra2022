@@ -128,7 +128,16 @@
                     Christenhusz & Byng (2016)
                 </a>
             </h3>
-            <div class="qrcode" id="qrcodeNewboldetal2015"></div>
+            <div class="qrcode" id="qrcodeChristenhuszByng2016"></div>
+        </div>
+
+        <div class="qrcodeGroup">
+            <h3 class="qrcodeTitle">
+                <a target="_blank" href="http://dx.doi.org/10.1016/j.sajb.2016.03.017">
+                    Greve <i>et al.</i> (2016)
+                </a>
+            </h3>
+            <div class="qrcode" id="qrcodeGreveetal2016"></div>
         </div>
 
         <div class="qrcodeGroup">
@@ -137,13 +146,20 @@
                     Newbold <i>et al.</i> (2015)
                 </a>
             </h3>
-            <div class="qrcode" id="qrcodeChristenhuszByng2016"></div>
+            <div class="qrcode" id="qrcodeNewboldetal2015"></div>
         </div>
+        <div class="qrcodeList"></div>
     </section>
 
     <script type="text/javascript">
         new QRCode(document.getElementById("qrcodeChristenhuszByng2016"), {
             text: "http://dx.doi.org/10.11646/phytotaxa.261.3.1",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+        new QRCode(document.getElementById("qrcodeGreveetal2016"), {
+            text: "http://dx.doi.org/10.1016/j.sajb.2016.03.017",
             colorDark : "#242424",
             colorLight : "#fff",
             correctLevel : QRCode.CorrectLevel.H
