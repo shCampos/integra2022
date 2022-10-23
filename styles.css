@@ -1,9 +1,10 @@
 body {
     background-color:#fff;
-    padding:20px;
-    font:14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 20px;
+    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:#727272;
-    font-weight:400;
+    font-weight: 400;
 }
 h1,h2,h3,h4,h5,h6,p,ul,ol,table,pre,dl { margin:0 0 10px; }
 h1,h2,h3 { line-height:1.1 }
@@ -56,6 +57,7 @@ table {
 }
 .qrcodeGroup {
     display: inline-block;
+    padding: 0px;
     margin: 10px 25px 15px 0px;
 }
 .qrcode img{
