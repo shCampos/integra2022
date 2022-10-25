@@ -7,6 +7,7 @@
     <title>Integra UFMS 2022</title>
 
     <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 </head>
 <body>
     <a href="../index.html">Página inicial</a>
@@ -26,8 +27,11 @@
                 <a href="#resumo">Resumo</a>
             </li>
             <li>
-                <a href="#agradecimentos">Agradecimentos</a>
+                <a href="#sistemadejogo">Sistema de jogo</a>
             </li>
+            <!-- <li>
+                <a href="#agradecimentos">Agradecimentos</a>
+            </li> -->
             <li>
                 <a href="#qrcodes">QR Codes (literatura e afins)</a>
             </li>
@@ -53,6 +57,25 @@
         <p>
             REZENDE, M.; COELHO, C. P. A utilização do Role-Playing Game (RPG) no ensino de Biologia como ferramenta de aprendizagem investigativo/cooperativa. In: CONGRESSO NACIONAL DE EDUCAÇÃO, 25., 2009. Anais [...] . Goiania: CAJ/UFG, 2009. p. 1-10.
         </p>
+    </section>
+
+    <section>
+        <a name="sistemadejogo"></a>
+        <h2 class="sectionTitle">Sistema de jogo</h2>
+        <a href="#indice">Voltar ao índice</a>
+
+        <p>Acesse a versão <i>em construção</i> do <strong>sistema de jogo do <i>Handroanthus</i></strong> clicando <a target="_blank" href="https://docs.google.com/document/d/1lx2q6zIGwIpwwkGGcJ6pagZ76MwfQ1zo7QccytmYods/edit?usp=sharing">aqui</a> ou escaneie o QR Code abaixo:</p>
+
+        <div class="qrcode" id="qrcodeSistemadejogo"></div>
+        
+        <script>
+            new QRCode(document.getElementById("qrcodeSistemadejogo"), {
+                text: "https://docs.google.com/document/d/1lx2q6zIGwIpwwkGGcJ6pagZ76MwfQ1zo7QccytmYods/edit?usp=sharing",
+                colorDark : "#242424",
+                colorLight : "#fff",
+                correctLevel : QRCode.CorrectLevel.H
+            })
+        </script>
     </section>
 
     <section>
