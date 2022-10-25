@@ -35,9 +35,9 @@
             <!-- <li>
                 <a href="#agradecimentos">Agradecimentos</a>
             </li> -->
-            <!-- <li>
-                <a href="#qrcodes">QR Codes (literatura e afins)</a>
-            </li> -->
+            <li>
+                <a href="#qrcodes">QR Code - Sistema de jogo</a>
+            </li>
         </ul>
     </section>
 
@@ -67,18 +67,9 @@
         <h2 class="sectionTitle">Sistema de jogo</h2>
         <a href="#indice">Voltar ao índice</a>
 
-        <p>Acesse a versão <i>em construção</i> do <strong>sistema de jogo do <i>Handroanthus</i></strong> clicando <a target="_blank" href="https://docs.google.com/document/d/1lx2q6zIGwIpwwkGGcJ6pagZ76MwfQ1zo7QccytmYods/edit?usp=sharing">aqui</a> ou escaneie o QR Code abaixo:</p>
+        <p>Acesse a versão <i>em construção</i> do <strong>sistema de jogo do <i>Handroanthus</i></strong> clicando <a target="_blank" href="https://docs.google.com/document/d/1lx2q6zIGwIpwwkGGcJ6pagZ76MwfQ1zo7QccytmYods/edit?usp=sharing">aqui</a> ou lendo abaixo:</p>
 
-        <div class="qrcode" id="qrcodeSistemadejogo" style="margin-bottom: 25px"></div>
-        
-        <script>
-            new QRCode(document.getElementById("qrcodeSistemadejogo"), {
-                text: "https://docs.google.com/document/d/1lx2q6zIGwIpwwkGGcJ6pagZ76MwfQ1zo7QccytmYods/edit?usp=sharing",
-                colorDark : "#242424",
-                colorLight : "#fff",
-                correctLevel : QRCode.CorrectLevel.H
-            })
-        </script>
+        <iframe class="iframe" src="https://docs.google.com/document/d/e/2PACX-1vTe0SKQg2Sj41DEQkrgdHaVz576CX_zBYx23xHE1C-GtHuPPhubZClcTGIy1uM2JJiqLiSDi_4bWeTz/pub?embedded=true"></iframe>
     </section>
 
     <section>
@@ -87,6 +78,32 @@
         <a href="#indice">Voltar ao índice</a>
 
         <p>Qualquer dúvida ou sugestão pode ser enviada para <a href="mailto: r_garcia@ufms.br">r_garcia@ufms.br</a>.</p>
+    </section>
+
+    <section>
+        <a name="qrcodes"></a>
+        <h2 class="sectionTitle">QRCode - Sistema de jogo</h2>
+        <a href="#indice">Voltar ao índice</a>
+
+        
+        <div class="qrcodeGroup">
+            <h3 class="qrcodeTitle">
+                <a target="_blank" href="https://docs.google.com/document/d/1lx2q6zIGwIpwwkGGcJ6pagZ76MwfQ1zo7QccytmYods/edit?usp=sharing">
+                    Sistema de jogo <br>
+                    (em construção)
+                </a>
+            </h3>
+            <div class="qrcode" id="qrcodeSistemadejogo" style="margin-bottom: 25px"></div>
+        </div>
+
+        <script>
+            new QRCode(document.getElementById("qrcodeSistemadejogo"), {
+                text: "https://docs.google.com/document/d/1lx2q6zIGwIpwwkGGcJ6pagZ76MwfQ1zo7QccytmYods/edit?usp=sharing",
+                colorDark : "#242424",
+                colorLight : "#fff",
+                correctLevel : QRCode.CorrectLevel.H
+            })
+        </script>
     </section>
 </body>
 </html>
