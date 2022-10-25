@@ -210,8 +210,77 @@
                 </h3>
                 <div class="qrcode" id="qrcodeGuillemautMarechalDrouard1992"></div>
             </div>
+            <div class="qrcodeGroup">
+                <h3 class="qrcodeTitle">
+                    <a target="_blank" href="https://dspace.jbrj.gov.br/jspui/handle/doc/26">
+                        Martinelli e Moraes (2013)
+                    </a>
+                </h3>
+                <div class="qrcode" id="qrcodeMartinelliMoraes2013"></div>
+            </div>
+            <div class="qrcodeGroup">
+                <h3 class="qrcodeTitle">
+                    <a target="_blank" href="https://webpages.charlotte.edu/~jweller2/pages/BINF8350f2011/BINF8350_Readings/Doyle_plantDNAextractCTAB_1987.pdf">
+                        Doyle e Doyle (1987)
+                    </a>
+                </h3>
+                <div class="qrcode" id="qrcodeDoyleDoyle1987"></div>
+            </div>
+            <div class="qrcodeGroup">
+                <h3 class="qrcodeTitle">
+                    <a target="_blank" href="https://doi.org/10.1023/A:1007656315275">
+                        Tel-Zur <i>et al.</i> (1999)
+                    </a>
+                </h3>
+                <div class="qrcode" id="qrcodeTelZuretal1999"></div>
+            </div>
+            <div class="qrcodeGroup">
+                <h3 class="qrcodeTitle">
+                    <a target="_blank" href="https://doi.org/10.15406/ijmboa.2019.04.00113">
+                        Sarrazola e Alzate (2019)
+                    </a>
+                </h3>
+                <div class="qrcode" id="qrcodeSarrazolaAlzate2019"></div>
+            </div>
         </div>
     </section>
+
+    <!-- <div class="qrcodeGroupList" id="qrcodeList"></div>
+
+    <script>
+        const referencesArray = [
+            {id: "google", name:"google", link:"https://www.google.com"},
+            {id: "google", name:"youtube", link:"http://www.youtube.com"}
+        ]
+
+        referencesArray.map((value) => {
+            const qrcodeGroup = document.createElement("div").classList.add("qrcodeGroup")
+
+            const titleWithLink = document.createElement("a")
+            // const linkTextNode = appendChild(document.createTextNode(value.name))
+            // titleWithLink.appendChild(linkTextNode)
+            titleWithLink.setAttribute('title', value.name)
+            titleWithLink.setAttribute('href', value.link)
+        
+            // const qrcodeTitle = document.createElement("h3").classList.add("qrcodeTitle")
+            // qrcodeTitle.appendChild(titleWithLink)
+            const qrcode = document.createElement("div")
+            qrcode.id = value.id
+            
+            //qrcodeGroup.appendChild(qrcodeTitle)
+            qrcodeGroup.appendChild(qrcode)
+
+            new QRCode(document.getElementById(value.id), {
+                text: value.link,
+                colorDark : "#242424",
+                colorLight : "#fff",
+                correctLevel : QRCode.CorrectLevel.H
+            })
+
+            
+            document.getElementById("qrcodeList").appendChild(qrcodeGroup)
+        })
+    </script> -->
     
     <script type="text/javascript">
         new QRCode(document.getElementById("qrcodeChristenhuszByng2016"), {
@@ -246,6 +315,30 @@
         })
         new QRCode(document.getElementById("qrcodeGuillemautMarechalDrouard1992"), {
             text: "https://dx.doi.org/10.1007/BF02669265",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+        new QRCode(document.getElementById("qrcodeMartinelliMoraes2013"), {
+            text: "https://dspace.jbrj.gov.br/jspui/handle/doc/26",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+        new QRCode(document.getElementById("qrcodeDoyleDoyle1987"), {
+            text: "https://webpages.charlotte.edu/~jweller2/pages/BINF8350f2011/BINF8350_Readings/Doyle_plantDNAextractCTAB_1987.pdf",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+        new QRCode(document.getElementById("qrcodeTelZuretal1999"), {
+            text: "https://doi.org/10.1023/A:1007656315275",
+            colorDark : "#242424",
+            colorLight : "#fff",
+            correctLevel : QRCode.CorrectLevel.H
+        })
+        new QRCode(document.getElementById("qrcodeSarrazolaAlzate2019"), {
+            text: "https://doi.org/10.15406/ijmboa.2019.04.00113",
             colorDark : "#242424",
             colorLight : "#fff",
             correctLevel : QRCode.CorrectLevel.H
